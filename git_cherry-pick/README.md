@@ -3,3 +3,8 @@
 1. Primer canvi
 2. Segon canvi
 4. Quart canvi
+
+## Squash
+1. Primer canvi
+2. Segon canvi
+3. Tercer canvi
