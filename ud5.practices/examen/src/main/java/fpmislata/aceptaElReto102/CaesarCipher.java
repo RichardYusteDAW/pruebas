@@ -32,11 +32,11 @@ public class CaesarCipher {
 
         for (char character : message.toCharArray()) {
             if (character >= 'a' && character <= 'z') {
-                char cipheredCharacter = (char) ((character - 'a' + displacement) % 26 + 'a');
+                char cipheredCharacter = (char) ((character - 'a' + displacement + 26) % 26 + 'a');
                 cipheredMessage.append(cipheredCharacter);
 
             } else if (character >= 'A' && character <= 'Z') {
-                char cipheredCharacter = (char) ((character - 'A' + displacement) % 26 + 'A');
+                char cipheredCharacter = (char) ((character - 'A' + displacement + 26) % 26 + 'A');
                 cipheredMessage.append(cipheredCharacter);
 
             } else {

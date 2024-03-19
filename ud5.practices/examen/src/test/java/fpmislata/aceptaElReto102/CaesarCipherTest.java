@@ -29,4 +29,13 @@ public class CaesarCipherTest {
                 () -> assertEquals("jqnc", caesarCipher.cipher(2, "hola")),
                 () -> assertEquals("fmjy", caesarCipher.cipher(-2, "hola")));
     }
+
+    @Test
+    @DisplayName("Testing other characters")
+    void otherCharacters() {
+
+        assertAll(
+                () -> assertEquals("jqnc, ¿swé vcn?", caesarCipher.cipher(2, "hola, ¿qué tal?")),
+                () -> assertEquals("fmjy, ¿osé ryj?", caesarCipher.cipher(-2, "hola, ¿qué tal?")));
+    }
 }
